@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React , {Fragment} from 'react';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Fragment className="Fragment">
+   <section>
+    <div className='content'>
     </div>
+    <div className='imagebox'>
+   <div className='form'>
+    <div className='form1'>
+      <p className='p1'>ALREADY MEMBERS</p>
+      <p className='p2'>Need help?</p>
+    </div>
+    <div className='form2'>
+      <input className='input' type="text" placeholder='  Enter Your  Username' />
+      <input className='input' type="password" placeholder='  Enter Your Password' />
+       <button className='sign'>SIGN IN</button>
+    </div>
+   
+    </div>
+        <p className='p3'>Don't have an account yet ?</p>
+    <p className='p4'>Create an account</p>
+    </div>
+
+   </section>
+   </Fragment>
   );
 }
 
